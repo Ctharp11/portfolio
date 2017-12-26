@@ -1,0 +1,31 @@
+.social-media {
+    & ul {
+        list-style-type: none;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        margin-bottom: 20px;
+      }
+      
+      .fa-linkedin:hover,
+      .fa-github-alt:hover,
+      .fa-twitter:hover {
+          color: rgb(42,162,239);
+      }
+      
+      .resume {
+        border: solid #0077b5;
+      
+      }
+      
+      .resume:hover {
+        color: rgb(42,162,239);
+        border: solid rgb(42,162,239);
+      }
+      
+      .resume:focus {
+        color: rgb(42,162,239);
+      } 
+}
+

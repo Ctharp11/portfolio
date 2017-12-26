@@ -1,0 +1,27 @@
+.header__primary--nav--li {
+
+    .btn-nav {
+
+    &:link,
+    &:visited {
+        margin-right: 3rem;
+        border-bottom: solid $color-primary-blue;
+        text-decoration: none;
+        color: $color-light-black;
+        padding: 4px;
+        // transition: all .2s ease;
+    }
+
+    &:hover {
+        color: $color-grey-light;
+        background-color: $color-primary-blue;
+        // transform: translateY(-2px);
+        box-shadow: 0 1rem 1rem rgba($color-black, .2);
+    }
+
+    &:active {
+
+    }
+
+  }
+}

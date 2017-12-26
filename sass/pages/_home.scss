@@ -1,0 +1,43 @@
+.main {
+    width: calc(80% - 5rem);
+    margin: 40px auto;
+
+    &--subhead {
+        padding-top: 2rem;
+    }
+
+    &__about-me{
+        background: linear-gradient(
+            to right bottom,
+            rgba($color-grey-dark, .8),
+            rgba($color-grey-darker, .9)
+        ),
+        url('../img/hero2.jpg');
+        background-size: cover;
+        box-shadow: 0 1.5rem 2rem rgba($color-black, 0.3);
+
+        &--img-me {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &--abt-me {
+            font-size: 1.8rem;
+            background: rgba($color-grey-darker, .8);
+            color: $color-grey-light;
+            padding: 2rem;
+        }
+    } 
+
+    &__contact-me{
+        
+    }
+
+    &__portfolio{
+        
+    }
+
+    &__skills{
+        
+    }
+}
