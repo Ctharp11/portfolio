@@ -1,0 +1,21 @@
+.autocomplete {
+    position:relative;
+
+    &__input {
+        width: 50%;
+        padding: 1rem;
+        font-size: 1.6rem;
+        border: none;
+        box-shadow: 0 .5rem 1.5rem rgba($color-black, 0.2);
+    }
+
+    &__close {
+        position: absolute;
+        font-size: 1.3rem;
+        color: $color-grey-dark;
+        z-index: 20;
+        top: 5rem;
+        left: calc(50% - 5rem);
+        cursor: pointer;
+    }
+}

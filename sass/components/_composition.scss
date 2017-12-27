@@ -1,3 +1,9 @@
-.portfolio-image:hover {
-    width: 420px;
+.portfolio-image {
+    &--ta {
+        height:20rem;
+    }
+
+    &--am {
+        height:20rem;
+    }
 }
