@@ -6,6 +6,7 @@
         padding: 1rem;
         font-size: 1.6rem;
         border: none;
+        outline: none;
         box-shadow: 0 .5rem 1.5rem rgba($color-black, 0.2);
     }
 
@@ -17,5 +18,35 @@
         top: 5rem;
         left: calc(50% - 5rem);
         cursor: pointer;
+        display: none;
+    } 
+
+    &__close.visible {
+        display: block;
     }
+
+    &__dialogue {
+        width: 50%;
+        display: none;
+        min-height: 4rem;
+        max-height: 33rem;
+        overflow: scroll;
+        border-top: 1px solid #999;
+    }
+
+    &__dialogue.open {
+        display: block;
+    }
+
+    &__dialogue div{
+        padding: 1.5rem 1rem 0 1rem; 
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+
+    &__dialogue div:hover{
+        background: #f2f2f2;
+    }
+
 }
