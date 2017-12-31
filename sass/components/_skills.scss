@@ -48,5 +48,51 @@
     &__dialogue div:hover{
         background: #f2f2f2;
     }
-
 }
+
+.modals {
+    &__modal {
+
+    }
+
+    &__modal-container {
+        position: fixed;
+        padding: 5rem;
+        border-radius: .5rem;
+        min-width: 40rem;
+        background-color: #2980b9;
+        color: white;
+        left: 50%;
+        top: 20%;
+        -webkit-transform: translate(-50%, -200%);
+        -ms-transform: translate(-50%, -200%);
+        transform: translate(-50%, -200%);
+
+        -webkit-transition: -webkit-transform .2s ease-out;
+        transition: transform .2s ease-out;
+    }
+
+    &__modal:before{
+        content: "";
+        position: fixed;
+        display: none;
+        background-color: rgba($color-black, .8);
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    } 
+
+    &__modal:target:before {
+        display: block;
+    }
+
+    &__modal:target &__modal-container {
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
+#modal-close {}
+

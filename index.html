@@ -25,23 +25,23 @@
         <div class="header__primary--nav">
             <ul class="header__primary--nav--ul">
                 <li class="header__primary--nav--li"> 
-                    <a class="btn-nav" href="#" alt="about"> about </a> 
+                    <a class="btn-nav" href="#about" alt="about"> about </a> 
                 </li>
                 <li class="header__primary--nav--li"> 
-                    <a class="btn-nav" href="#" alt="contact me"> contact me </a>
+                    <a class="btn-nav" href="#contact" alt="contact me"> contact me </a>
                 </li>
                 <li class="header__primary--nav--li"> 
-                    <a class="btn-nav" href="#" alt="portfolio"> portfolio</a>
+                    <a class="btn-nav" href="#portfolio" alt="portfolio"> portfolio</a>
                 </li>
                 <li class="header__primary--nav--li"> 
-                    <a class="btn-nav" href="#" alt="skills"> skills </a>
+                    <a class="btn-nav" href="#skills" alt="skills"> skills </a>
                 </li>
             </ul>
         </div>
     </header>
 
     <main class="main">
-        <div class="main__about-me u-margin-bottom-big">
+        <div class="main__about-me u-margin-bottom-big" id="#about">
             <h1 class="main--subhead main--subhead-white">
                 About Me
             </h1>
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <div class="main__contact-me u-margin-bottom-big">
+        <div class="main__contact-me u-margin-bottom-big" id="#contact">
             <h1 class="main--subhead u-margin-bottom-medium">
                 Contact and Resume
             </h1>
@@ -116,6 +116,16 @@
 
             <div class="modals">
                 <h3>Modals</h3>
+                <!-- # is target selector -->
+                <a href="#subscribe">Subscribe Here!</a>
+                <div class="modals__modal" id="subscribe">
+                    <div class="modals__modal-container">
+                        <p>Enter your email to subscribe</p>
+                        <input type="email" placeholder="Email">
+                        <a href="#modal-close">Close</a>
+                    </div>
+
+                </div>
             </div>
 
             <hr class="u-margin-bottom-big">

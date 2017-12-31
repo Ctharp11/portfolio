@@ -121,6 +121,39 @@ body {
   .autocomplete__dialogue div:hover {
     background: #f2f2f2; }
 
+.modals__modal-container {
+  position: fixed;
+  padding: 5rem;
+  border-radius: .5rem;
+  min-width: 40rem;
+  background-color: #2980b9;
+  color: white;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -200%);
+  -ms-transform: translate(-50%, -200%);
+  transform: translate(-50%, -200%);
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out; }
+
+.modals__modal:before {
+  content: "";
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.modals__modal:target:before {
+  display: block; }
+
+.modals__modal:target .modals__modal-container {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0); }
+
 .row {
   max-width: 100rem;
   margin: 0 auto; }
