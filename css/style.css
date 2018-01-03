@@ -53,7 +53,7 @@ body {
 .header__primary--nav--li .btn-nav:hover {
   color: #efefef;
   background-color: #2980b9;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 0.7rem rgba(0, 0, 0, 0.13); }
 
 .portfolio-image--ta {
   height: 20rem; }
@@ -209,7 +209,7 @@ body {
   .main--subhead {
     padding-top: 2rem; }
   .main__about-me {
-    background: linear-gradient(to right bottom, rgba(119, 119, 119, 0.8), rgba(68, 68, 68, 0.9)), url("../img/hero2.jpg");
+    background: linear-gradient(to right bottom, rgba(119, 119, 119, 0.5), rgba(68, 68, 68, 0.6)), url("../img/hero2.jpg");
     background-size: cover;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }
     .main__about-me--img-me {
