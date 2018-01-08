@@ -43,6 +43,9 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 2rem; }
 
+.u-margin-top-big {
+  margin-top: 4rem; }
+
 .header__primary--nav--li .btn-nav:link, .header__primary--nav--li .btn-nav:visited {
   margin-right: 3rem;
   border-bottom: solid #2980b9;
@@ -55,11 +58,24 @@ body {
   background-color: #2980b9;
   box-shadow: 0 1rem 0.7rem rgba(0, 0, 0, 0.13); }
 
-.portfolio-image--ta {
-  height: 20rem; }
-
-.portfolio-image--am {
-  height: 20rem; }
+.portfolio-image {
+  text-align: center;
+  -webkit-transition: transform .3s ease;
+  transition: transform .3s ease;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+  backface-visibility: hidden; }
+  .portfolio-image--img {
+    height: 20rem; }
+  .portfolio-image--text {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #444;
+    letter-spacing: 1.1px; }
+  .portfolio-image:hover {
+    transform: translateY(-1rem) scale(1.04);
+    outline: 1rem solid #2980b9;
+    outline-offset: 1rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.4); }
 
 .social-media ul {
   list-style-type: none;
@@ -72,14 +88,16 @@ body {
 .social-media .fa-linkedin:hover,
 .social-media .fa-github-alt:hover,
 .social-media .fa-twitter:hover {
-  color: #2aa2ef; }
+  color: #2aa2ef;
+  transform: scale(1.2); }
 
 .social-media .resume {
   border: solid #0077b5; }
 
 .social-media .resume:hover {
   color: #2aa2ef;
-  border: solid #2aa2ef; }
+  border: solid #2aa2ef;
+  transform: scale(1.1); }
 
 .social-media .resume:focus {
   color: #2aa2ef; }
@@ -157,6 +175,8 @@ body {
 .row {
   max-width: 100rem;
   margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
   .row::after {
     content: "";
     display: table;
@@ -209,19 +229,19 @@ body {
   .main--subhead {
     padding-top: 2rem; }
   .main__about-me {
-    background: linear-gradient(to right bottom, rgba(119, 119, 119, 0.5), rgba(68, 68, 68, 0.6)), url("../img/hero2.jpg");
+    background: url("../img/hero2.jpeg");
     background-size: cover;
-    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4); }
     .main__about-me--img-me {
       display: block;
       margin: 0 auto; }
     .main__about-me--abt-me {
       font-size: 1.8rem;
-      background: rgba(68, 68, 68, 0.8);
+      background: rgba(68, 68, 68, 0.6);
+      font-weight: 600;
       color: #efefef;
       padding: 2rem; }
     .main__about-me--experience {
-      color: #2980b9;
       text-transform: uppercase;
       font-weight: 700;
       text-decoration: underline; }

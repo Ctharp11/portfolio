@@ -12,16 +12,17 @@
       .fa-github-alt:hover,
       .fa-twitter:hover {
           color: rgb(42,162,239);
+          transform: scale(1.2);
       }
       
       .resume {
         border: solid #0077b5;
-      
       }
       
       .resume:hover {
         color: rgb(42,162,239);
         border: solid rgb(42,162,239);
+        transform: scale(1.1);
       }
       
       .resume:focus {
