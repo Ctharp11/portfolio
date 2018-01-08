@@ -148,11 +148,15 @@ body {
   color: white;
   left: 50%;
   top: 20%;
-  -webkit-transform: translate(-50%, -200%);
-  -ms-transform: translate(-50%, -200%);
-  transform: translate(-50%, -200%);
+  -webkit-transform: translate(-50%, -400%);
+  -ms-transform: translate(-50%, -400%);
+  transform: translate(-50%, -400%);
   -webkit-transition: -webkit-transform .2s ease-out;
   transition: transform .2s ease-out; }
+
+.modals__modal--text {
+  color: white;
+  text-decoration: none; }
 
 .modals__modal:before {
   content: "";
