@@ -285,19 +285,19 @@ body {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
-  padding: 1rem 2rem;
-  color: #efefef;
+  padding: 1rem 5rem 1rem 1.5rem;
+  color: #2980b9;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
-  background-size: 220%;
+  background-image: linear-gradient(to right bottom, #efefef, white);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%);
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
 
 .navigation__link:hover, .navigation__link:active {
-  background-position: 100%;
-  color: #2980b9;
-  transform: translateX(1rem); }
+  -webkit-transform: translateX(3rem) scale(1.02);
+  transform: translateX(3rem) scale(1.02); }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
