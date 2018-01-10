@@ -14,13 +14,11 @@
         text-align: center;
         font-size: 1.6rem;
         color: $color-grey-darker;
-        letter-spacing: 1.1px;
+        letter-spacing: 1.1px; 
     }
 
     &:hover {
         transform: translateY(-1rem) scale(1.04);
-        outline: 1rem solid $color-primary-blue;
-        outline-offset: 1rem;
         box-shadow: 0 2rem 3rem rgba($color-black, 0.4);
     }
 }

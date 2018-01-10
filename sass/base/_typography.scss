@@ -5,16 +5,17 @@ body {
     color: $color-light-black;
 }
 
-.main--subhead {
+.main {
+
+    &--subhead {
     text-align: center;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 500;
 
-    &-white {
-        color: white;
-    }
-
-
+        &-white {
+            color: $color-grey-light;
+        }
+    }    
 }
 

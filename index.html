@@ -13,6 +13,22 @@
 </head>
 <body>
 
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#about">About Me</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contact">Contact and Resume</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#portfolio">Portfolio Pieces</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#skills">Other Skills</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header__primary" data-aos="fade-zoom-in">
         <div class="header__primary--logo">
             <div class="header__primary--logo-name">
@@ -22,7 +38,7 @@
             </div>
             <div class="header__primary--logo-title">front-end web developer</div>
         </div>
-        <div class="header__primary--nav">
+        <!-- <div class="header__primary--nav">
             <ul class="header__primary--nav--ul">
                 <li class="header__primary--nav--li"> 
                     <a class="btn-nav" href="#about" alt="about"> about </a> 
@@ -37,30 +53,36 @@
                     <a class="btn-nav" href="#skills" alt="skills"> skills </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </header>
 
     <main class="main">
         <div class="main__about-me u-margin-bottom-big" id="about">
             <h1 class="main--subhead main--subhead-white">
-                <!-- About Me -->
+                About Me
             </h1>
 
             <div class="row">
-                <div class="col-1-of-3">
-                    <img class="main__about-me--img-me" src="img/me.png" alt="me">
-                </div>  
+                <!-- <div class="col-1-of-3"> -->
+                
+                <!-- </div>   -->
 
-                <div class="col-2-of-3">
+                <!-- <div class="col-2-of-3"> -->
                     <div class="main__about-me--abt-me">
-                        I'm a web developer who loves to code and make great looking websites. I'm passionate about education, learning, and getting better at my craft. I taught science for 5 years and am now in the world of software development!
+
+                        <img class="main__about-me--img-me" src="img/me.png" alt="me">
+
+                        I'm a web developer who loves to code and make great looking websites! I'm passionate about education and am always working to get better at my craft.
                         <br>
                         <br>
-                        <span class="main__about-me--experience"> Experience: </span>
-                        <br>
-                        My experience is in HTML, CSS, Bootstrap, Sass, Responsive Design JavaScript, jQuery, React, RESTful APIs, Node.js, Express, Sequelize, MySQL, Mongoose, and MongoDB.
+                        <div class="main__about-me--img-me--second">
+                            <span class="main__about-me--experience"> Experience: </span>
+                            <br>
+                            My experience is in HTML, CSS, Bootstrap, Sass, Responsive Design, JavaScript, jQuery, React, RESTful APIs, Node.js, Express, Sequelize, MySQL, Mongoose, and MongoDB.
+                            </span>
+                        </div>
                     </div>
-                </div> 
+                <!-- </div>  -->
             </div>
         </div>
 
@@ -129,9 +151,11 @@
                     </div>
 
                     <div class="portfolio-image--text u-margin-top-big">
-                        A website built for a fake Austin Tourism company
+                        Travel Austin is a website built for a fake travel agency that would allow people to book tours in Austin.
+                        <br>
                         <br>
                         Built with Sass and CSS animations
+                        <hr>
                     </div>
 
                 </div>
@@ -145,9 +169,11 @@
                         </div>
 
                         <div class="portfolio-image--text u-margin-top-big">
-                             A website that shows 6 working APIs
+                            API Bakery is a website that showcases 6 APIs: Iframely, Google Maps, Zomato, Giphy, Youtube, and Spotify 
                             <br>
-                            Built with Sass, javascript, and APIs called with AJAX
+                            <br>
+                            Built with Sass, JavaScript, and AJAX
+                            <hr>
                         </div>
 
                 </div>

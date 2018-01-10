@@ -7,21 +7,40 @@
     }
 
     &__about-me{
-        background: 
+        height: 50rem;
+        position: relative;
+        text-align: center;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-blue-lighter, .8),
+            rgba($color-primary-blue, .8)),
         url('../img/hero2.jpeg');
         background-size: cover;
         box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
 
         &--img-me {
-            display: block; 
-            margin: 0 auto;
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            opacity: .8;
+            height: 20rem;
+            border-radius: 50%; 
+
+            &--second {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                margin-right: 2rem;
+            }
         }
 
         &--abt-me {
             font-size: 1.8rem;
-            background: rgba($color-grey-darker, .6);
             font-weight: 600;
             color: $color-grey-light;
+            letter-spacing: 1.2px;
             padding: 2rem;
         }
 
