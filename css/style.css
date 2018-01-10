@@ -282,7 +282,7 @@ body {
   margin: 1rem; }
 
 .navigation__link:link, .navigation__link:visited {
-  display: inline-block;
+  display: none;
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 5rem 1rem 1.5rem;
@@ -296,7 +296,6 @@ body {
   transition: all .4s ease; }
 
 .navigation__link:hover, .navigation__link:active {
-  -webkit-transform: translateX(3rem) scale(1.02);
   transform: translateX(3rem) scale(1.02); }
 
 .navigation__checkbox:checked ~ .navigation__background {
@@ -305,6 +304,9 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   width: 100%;
   opacity: 1; }
+
+.navigation__checkbox:checked ~ .navigation__nav .navigation__link {
+  display: inline-block; }
 
 .navigation__icon {
   position: relative;

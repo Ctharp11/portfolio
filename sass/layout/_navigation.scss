@@ -62,7 +62,7 @@
     &__link { 
         &:link,
         &:visited {
-            display: inline-block;
+            display: none;
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 5rem 1rem 1.5rem;
@@ -78,7 +78,6 @@
 
         &:hover,
         &:active {
-            -webkit-transform: translateX(3rem) scale(1.02); 
             transform: translateX(3rem) scale(1.02); 
         }
     }
@@ -90,6 +89,10 @@
     &__checkbox:checked ~ &__nav {
         width: 100%;
         opacity:1;
+    }
+
+    &__checkbox:checked ~ &__nav &__link {
+        display: inline-block;
     }
 
     &__icon {
