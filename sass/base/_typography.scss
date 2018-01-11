@@ -19,3 +19,14 @@ body {
     }    
 }
 
+.skills {
+    color: $color-grey-light;
+
+    &__nav {
+
+        &--li {
+            text-transform: uppercase;
+        }
+    }
+}
+

@@ -10,50 +10,44 @@
         padding-top: 2rem;
     }
 
-    &__about-me{
-        height: 50rem;
+    &__about-me {
+        height: 45rem;
         position: relative;
         background-image: linear-gradient(
             to right bottom,
-            rgba($color-primary-blue-lighter, .8),
-            rgba($color-primary-blue, .8)),
+            rgba($color-primary-blue-lighter, .7),
+            rgba($color-primary-blue, .9)),
         url('../img/hero2.jpeg');
         background-size: cover;
         box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
 
         @media screen and (max-width: 770px) {
             height: 60rem;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
         }
 
         @media screen and (max-width: 500px) {
             height: 80rem;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+            -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
         }
 
         &--img-me {
-            position: absolute;
-            top: 35%;
-            left: 67%;
+            float: left;
             opacity: .8;
-            height: 25rem;
+            height: 30rem;
             border-radius: 50%; 
+            backface-visibility: hidden;
 
-            @media screen and (max-width: 770px) {
-                top: 70%;
+            @media screen and (max-width: 770px) { 
+                position: absolute;
+                top: 25%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 height: 20rem; 
-            }
-
-            &--second {
-                width: 40%;
-
-                @media screen and (max-width: 770px) {
-                    width: 100%;
-                }
             }
         }
 
@@ -61,12 +55,27 @@
             animation: rotate 1.5s cubic-bezier(.19,.67,.45,.9);
         }
 
-        &--abt-me {
+        &--box-main {
             font-size: 1.8rem;
             font-weight: 600;
             color: $color-grey-light;
             letter-spacing: 1.2px;
             padding: 2rem;
+
+            &--box-sub {
+                display: inline-block;
+                width: 60%;
+                margin-left: 2rem;
+
+                @media screen and (max-width: 770px) { 
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 70%;
+                    margin-left: 0;
+                }
+            }
         }
 
         &--experience {
