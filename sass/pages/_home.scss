@@ -2,6 +2,10 @@
     width: calc(80% - 5rem);
     margin: 40px auto;
 
+    @media screen and (max-width: 900px) {
+        width: calc(98% - 5rem);
+    }
+
     &--subhead {
         padding-top: 2rem;
     }
@@ -9,7 +13,6 @@
     &__about-me{
         height: 50rem;
         position: relative;
-        text-align: center;
         background-image: linear-gradient(
             to right bottom,
             rgba($color-primary-blue-lighter, .8),
@@ -20,20 +23,42 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
 
+        @media screen and (max-width: 770px) {
+            height: 60rem;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+        }
+
+        @media screen and (max-width: 500px) {
+            height: 80rem;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+        }
+
         &--img-me {
             position: absolute;
-            top: 40%;
-            left: 15%;
+            top: 35%;
+            left: 67%;
             opacity: .8;
-            height: 20rem;
+            height: 25rem;
             border-radius: 50%; 
 
-            &--second {
-                position: absolute;
-                top: 40%;
+            @media screen and (max-width: 770px) {
+                top: 70%;
                 left: 50%;
-                margin-right: 2rem;
+                transform: translate(-50%, -50%);
+                height: 20rem; 
             }
+
+            &--second {
+                width: 40%;
+
+                @media screen and (max-width: 770px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        &--img-me:hover {
+            animation: rotate 1.5s cubic-bezier(.19,.67,.45,.9);
         }
 
         &--abt-me {

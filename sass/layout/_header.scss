@@ -1,22 +1,30 @@
 .header__primary {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     border-bottom: 2px solid $color-grey-dark;
     background-color: rgba(235, 235, 235, 0.9);
-    height: 12rem;
+    height: 13rem;
     animation: navMove .6s cubic-bezier(0.645, 0.045, 0.355, 1);
 
     &--logo {
+
+        padding-bottom: 1rem;
+
         &-curlies {
             color: $color-primary-blue;
         }
     
         &-name {
+            padding-top: 2rem;
+            text-align: center;
             font-size: 4rem;
             text-transform: uppercase;
             letter-spacing: 1.2;
             color: #222;
+
+            @media screen and (max-width: 670px) {
+                text-align: left;
+                margin-left: 2rem;
+                font-size: 3rem;
+            }
         }
     
         &-title {
@@ -25,13 +33,19 @@
             text-align: center;
             letter-spacing: 1.4;
             color: #222;
+
+            @media screen and (max-width: 670px) {
+                text-align: left;
+                margin-left: 2rem;
+                font-size: 2rem;
+            }
         }
     }
 
     &--nav {
         font-size: $default-text-font;
         font-size: 1.8rem;
-        text-transform: uppercase;
+        text-transform: uppercase; 
         font-weight: 700;
 
         & ul {

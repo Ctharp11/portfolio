@@ -3,11 +3,15 @@
     text-align: center;
     -webkit-transition: transform .3s ease;
     transition: transform .3s ease;
-    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.3);
+    // box-shadow: 0 1.5rem 2rem rgba($color-black, 0.3);
     backface-visibility: hidden;
 
     &--img {
         height:20rem;
+
+        @media screen and (max-width: 700px) {
+            height: 15rem;
+        }
     }
 
     &--text {
@@ -19,7 +23,7 @@
 
     &:hover {
         transform: translateY(-1rem) scale(1.04);
-        box-shadow: 0 2rem 3rem rgba($color-black, 0.4);
+        // box-shadow: 0 2rem 3rem rgba($color-black, 0.4);
     }
 }
 
