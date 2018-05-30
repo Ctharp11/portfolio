@@ -208,7 +208,6 @@ body {
 
 .header__primary {
   border-bottom: 2px solid #777;
-  background-color: rgba(235, 235, 235, 0.9);
   height: 13rem;
   animation: navMove 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); }
   .header__primary--logo {
@@ -384,7 +383,7 @@ body {
   transform: rotate(-135deg); }
 
 .main {
-  width: calc(80% - 5rem);
+  width: calc(90% - 5rem);
   margin: 40px auto; }
   @media screen and (max-width: 900px) {
     .main {
@@ -392,13 +391,17 @@ body {
   .main--subhead {
     padding-top: 2rem; }
   .main__about-me {
-    height: 45rem;
+    height: 48rem;
     position: relative;
-    background-image: linear-gradient(to right bottom, rgba(62, 155, 218, 0.7), rgba(41, 128, 185, 0.9)), url("../img/hero2.jpeg");
+    background-image: linear-gradient(to right bottom, rgba(62, 155, 218, 0.7), rgba(41, 128, 185, 0.9));
     background-size: cover;
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
-    -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%); }
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%); }
+    @media screen and (max-width: 1050px) {
+      .main__about-me {
+        -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%); } }
     @media screen and (max-width: 770px) {
       .main__about-me {
         height: 60rem;
@@ -414,16 +417,16 @@ body {
       opacity: .8;
       height: 30rem;
       border-radius: 50%;
-      backface-visibility: hidden; }
+      backface-visibility: hidden;
+      margin-left: 2rem; }
       @media screen and (max-width: 770px) {
         .main__about-me--img-me {
           position: absolute;
           top: 25%;
           left: 50%;
           transform: translate(-50%, -50%);
-          height: 20rem; } }
-    .main__about-me--img-me:hover {
-      animation: rotate 1.5s cubic-bezier(0.19, 0.67, 0.45, 0.9); }
+          height: 20rem;
+          margin: 2rem 0; } }
     .main__about-me--box-main {
       font-size: 1.8rem;
       font-weight: 600;
@@ -432,8 +435,8 @@ body {
       padding: 2rem; }
       .main__about-me--box-main--box-sub {
         display: inline-block;
-        width: 60%;
-        margin-left: 2rem; }
+        width: 50%;
+        margin-left: 4rem; }
         @media screen and (max-width: 770px) {
           .main__about-me--box-main--box-sub {
             position: absolute;
