@@ -1,5 +1,5 @@
 .header__primary {
-    border-bottom: 2px solid $color-grey-dark;
+    // border-bottom: 2px solid $color-grey-dark;
     height: 13rem;
     animation: navMove .6s cubic-bezier(0.645, 0.045, 0.355, 1);
 
@@ -13,30 +13,29 @@
     
         &-name {
             padding-top: 2rem;
-            text-align: center;
-            font-size: 4rem;
+            margin:2rem 0 0 4rem;
+            font-size: 3rem;
             text-transform: uppercase;
-            letter-spacing: 1.2;
+            // letter-spacing: 1.2px;
             color: #222;
 
-            @media screen and (max-width: 670px) {
-                text-align: left;
-                margin-left: 2rem;
-                font-size: 3rem;
+            @media screen and (max-width: 450px) {
+                margin: 6rem 0 0 0;
+                font-size: 2.4rem;
+                text-align: center;
             }
         }
     
         &-title {
             font-size: 2rem;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 1.4;
+            margin-left: 10rem;
+            letter-spacing: 1.4px;
             color: #222;
 
-            @media screen and (max-width: 670px) {
-                text-align: left;
-                margin-left: 2rem;
-                font-size: 2rem;
+            @media screen and (max-width: 450px) {
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 0;
             }
         }
     }

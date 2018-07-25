@@ -59,8 +59,6 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 500; }
-  .main--subhead-white {
-    color: #efefef; }
 
 .skills {
   color: #efefef; }
@@ -97,10 +95,9 @@ body {
   transition: transform .3s ease;
   backface-visibility: hidden; }
   .portfolio-image--img {
-    height: 20rem; }
-    @media screen and (max-width: 700px) {
-      .portfolio-image--img {
-        height: 15rem; } }
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover; }
   .portfolio-image--text {
     text-align: center;
     font-size: 1.6rem;
@@ -207,7 +204,6 @@ body {
     width: calc((100% - 2rem) / 2); }
 
 .header__primary {
-  border-bottom: 2px solid #777;
   height: 13rem;
   animation: navMove 0.6s cubic-bezier(0.645, 0.045, 0.355, 1); }
   .header__primary--logo {
@@ -216,27 +212,25 @@ body {
       color: #2980b9; }
     .header__primary--logo-name {
       padding-top: 2rem;
-      text-align: center;
-      font-size: 4rem;
+      margin: 2rem 0 0 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
-      letter-spacing: 1.2;
       color: #222; }
-      @media screen and (max-width: 670px) {
+      @media screen and (max-width: 450px) {
         .header__primary--logo-name {
-          text-align: left;
-          margin-left: 2rem;
-          font-size: 3rem; } }
+          margin: 6rem 0 0 0;
+          font-size: 2.4rem;
+          text-align: center; } }
     .header__primary--logo-title {
       font-size: 2rem;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 1.4;
+      margin-left: 10rem;
+      letter-spacing: 1.4px;
       color: #222; }
-      @media screen and (max-width: 670px) {
+      @media screen and (max-width: 450px) {
         .header__primary--logo-title {
-          text-align: left;
-          margin-left: 2rem;
-          font-size: 2rem; } }
+          font-size: 1.8rem;
+          text-align: center;
+          margin: 0; } }
   .header__primary--nav {
     font-size: 1.6rem;
     font-size: 1.8rem;
@@ -382,70 +376,8 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
-.main {
-  width: calc(90% - 5rem);
-  margin: 40px auto; }
-  @media screen and (max-width: 900px) {
-    .main {
-      width: calc(98% - 5rem); } }
-  .main--subhead {
-    padding-top: 2rem; }
-  .main__about-me {
-    height: 48rem;
-    position: relative;
-    background-image: linear-gradient(to right bottom, rgba(62, 155, 218, 0.7), rgba(41, 128, 185, 0.9));
-    background-size: cover;
-    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.4);
-    -webkit-clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 85% 50%, 100% 100%, 0 100%); }
-    @media screen and (max-width: 1050px) {
-      .main__about-me {
-        -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%); } }
-    @media screen and (max-width: 770px) {
-      .main__about-me {
-        height: 60rem;
-        -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%); } }
-    @media screen and (max-width: 500px) {
-      .main__about-me {
-        height: 80rem;
-        -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%); } }
-    .main__about-me--img-me {
-      float: left;
-      opacity: .8;
-      height: 30rem;
-      border-radius: 50%;
-      backface-visibility: hidden;
-      margin-left: 2rem; }
-      @media screen and (max-width: 770px) {
-        .main__about-me--img-me {
-          position: absolute;
-          top: 25%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          height: 20rem;
-          margin: 2rem 0; } }
-    .main__about-me--box-main {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #efefef;
-      letter-spacing: 1.2px;
-      padding: 2rem; }
-      .main__about-me--box-main--box-sub {
-        display: inline-block;
-        width: 50%;
-        margin-left: 4rem; }
-        @media screen and (max-width: 770px) {
-          .main__about-me--box-main--box-sub {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 70%;
-            margin-left: 0; } }
-    .main__about-me--experience {
-      text-transform: uppercase;
-      font-weight: 700;
-      text-decoration: underline; }
+.main__about-me--img-me {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 50%; }
