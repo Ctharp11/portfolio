@@ -1,54 +1,22 @@
 .skills {
-    width: calc(90% - 5rem);
+    width: 100%;
     padding: 2rem;
-    margin: 40px auto;
     text-align: center;
     background-image: radial-gradient($color-primary-blue-lighter, $color-primary-blue);
-    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
-        -webkit-clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%);
-
-        @media screen and (max-width: 770px) {
-            height: 60rem;
-            -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-        }
-
-        @media screen and (max-width: 500px) {
-            height: 80rem;
-            -webkit-clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%);
-        }
-
-    @media screen and (max-width: 900px) {
-        width: calc(98% - 5rem);
-    }
-
-    @media screen and (max-width: 770px) { 
-        width: 80%;
-        text-align: left;
-        margin-left: 2rem;
-    }
 
     &__nav {
         list-style-type: none;
-        width: 30rem;
         margin: 0 auto;
-
-        @media screen and (max-width: 770px) { 
-            width: 80%;
-            text-align: left;
-        }
 
         &--li {
             padding: 1rem;
-            border-bottom: 1px solid $color-grey-dark;
-
         }
     }
-
-    &__final {
-        width: 90%;
+    &--hr {
+        height: 1px;
+        background-color: rgba($color-grey-light, .7);
+        width: 10rem;
+        margin: 0 auto;
     }
 }
 
