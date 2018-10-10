@@ -215,7 +215,7 @@ body {
   padding: 5px 10px;
   color: white;
   box-shadow: 2px 2px 2px #2980b9; }
-  .modal-visit:hover {
+  .modal-visit:hover, .modal-visit:visited, .modal-visit:focus {
     color: white;
     text-decoration: none; }
 
