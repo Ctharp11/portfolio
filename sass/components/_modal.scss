@@ -40,6 +40,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin: 2rem;
+        margin-left: 0;
     }
     &-visit {
         background-color: $color-primary-blue;
@@ -53,8 +54,6 @@
             color: white;
             text-decoration: none;
         }
-
-
     }
 }
 

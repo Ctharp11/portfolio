@@ -34,6 +34,8 @@ order: base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
+  max-width: 1500px;
+  margin: 0 auto;
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
@@ -208,7 +210,8 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  margin: 2rem; }
+  margin: 2rem;
+  margin-left: 0; }
 
 .modal-visit {
   background-color: #2980b9;
