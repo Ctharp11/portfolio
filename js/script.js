@@ -29,7 +29,7 @@ for (let i = 0; i < portImage.length; i++) {
                 $('#modal-header').html('Instacool');
                 $('#modal-img').html('<img class="modal-image" src="img/instacool.png" alt="instacool" />')
                 $('#visit').html('<a class="modal-visit" href="https://insta-cool.herokuapp.com/" target="_blank"> Click here to visit Instacool </a>')
-                $('#modal-content').html("<span> Behold InstaCool, the internet's #1 second-rate photo-uploading app. Upload, like, and comment on photos. In a world of endless camera ops, the only question is, are you InstaCool cool? The answer? Yes, yes you are 😎.<br><br>Full-stack and mobile-responsive app built with the MERN stack: React, Node, Express, and MongoDB. Authentication with Facebook and photos upload via Cloudinary. Custom icons and logo made in Adobe Illustrator. </span>");
+                $('#modal-content').html("<span> Behold InstaCool, the internet's #1 second-rate photo-uploading app. Upload, like, and comment on photos. In a world of endless camera ops, the only question is, are you InstaCool cool? The answer? Yes, yes you are :).<br><br>Full-stack and mobile-responsive app built with the MERN stack: React, Node, Express, and MongoDB. Authentication with Facebook and photos upload via Cloudinary. Custom icons and logo made in Adobe Illustrator. </span>");
                 return;
             case '3': 
                 closeModal()
@@ -37,7 +37,7 @@ for (let i = 0; i < portImage.length; i++) {
                 $('#modal-header').html('Vintage Things');
                 $('#modal-img').html('<img class="modal-image" src="img/vintage-things.png" alt="vintage things" />')
                 $('#visit').html('<a class="modal-visit" href="http://vintage-things.camerontharp.com/" target="_blank"> Click here to visit Vintage Things </a>')
-                $('#modal-content').html("<span> Vintage Things is a prototype of an ecommerce website where people can buy and sell their vintage items. Embrace your inner hipster and get your vintage on! <br><br> Front-end, mobile-responsive project built with Sass, JavaScript, and jQuery. Firebase used for saving items in the shopping cart and persistance. </span>");
+                $('#modal-content').html("<span> Vintage Things is a prototype of an ecommerce website where people can buy and sell their vintage items. Embrace your inner hipster and get your vintage on! <br><br> Front-end, mobile-responsive project built with Sass, JavaScript, and jQuery. Firebase used for saving items in the shopping cart and persistence. </span>");
                 return;
             case '4': 
                 closeModal()
